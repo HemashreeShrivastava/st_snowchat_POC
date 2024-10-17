@@ -176,7 +176,7 @@ def main():
 
         if api_key or st.session_state.openai_key_entered:
             st.session_state.question = st.text_area(
-                "Hi! I’m Snow Chat, your data assistant. Ask me anything about your connected data!",
+                "Hi! I’m Omni, your data assistant. Ask me anything about your connected data!",
                 value=st.session_state.question,
                 placeholder="What is the total revenue?",
                 height=100,
