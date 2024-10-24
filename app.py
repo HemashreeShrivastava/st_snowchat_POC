@@ -163,7 +163,7 @@ def main():
             os.environ["SNOWFLAKE_ACCOUNT"] = st.text_input("Account", value="yz71246.central-india.azure")
             os.environ["SNOWFLAKE_WAREHOUSE"] = st.text_input("Warehouse", value="COMPUTE_WH")
             os.environ["SNOWFLAKE_SCHEMA"] = st.text_input("Schema", value="Public")
-            os.environ["SNOWFLAKE_DATABASE"] = st.text_input("Database", value="SALES_REVENUE")
+            os.environ["SNOWFLAKE_DATABASE"] = st.text_input("Database", value="OMNI_DATA")
             st.warning("Enter OpenAI API Key to proceed.")
             st.session_state.openai_key_entered = False
 
