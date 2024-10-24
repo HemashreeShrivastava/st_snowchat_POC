@@ -158,12 +158,12 @@ def main():
 
         if option == "Snowflake Credentials":
             st.caption("Snowflake Credentials")
-            os.environ["SNOWFLAKE_USER"] = st.text_input("User", value="Siri")
-            os.environ["SNOWFLAKE_PASSWORD"] = st.text_input("Password", value="Techment@123", key="hidden_password", type="password")
-            os.environ["SNOWFLAKE_ACCOUNT"] = st.text_input("Account", value="jv51685.central-india.azure")
+            os.environ["SNOWFLAKE_USER"] = st.text_input("User", value="Omni")
+            os.environ["SNOWFLAKE_PASSWORD"] = st.text_input("Password", value="Omni@123", key="hidden_password", type="password")
+            os.environ["SNOWFLAKE_ACCOUNT"] = st.text_input("Account", value="yz71246.central-india.azure")
             os.environ["SNOWFLAKE_WAREHOUSE"] = st.text_input("Warehouse", value="COMPUTE_WH")
-            os.environ["SNOWFLAKE_SCHEMA"] = st.text_input("Schema", value="RAW")
-            os.environ["SNOWFLAKE_DATABASE"] = st.text_input("Database", value="SALES_REVENUE_DATA")
+            os.environ["SNOWFLAKE_SCHEMA"] = st.text_input("Schema", value="Public")
+            os.environ["SNOWFLAKE_DATABASE"] = st.text_input("Database", value="SALES_REVENUE")
             st.warning("Enter OpenAI API Key to proceed.")
             st.session_state.openai_key_entered = False
 
